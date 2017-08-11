@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+
+
+function fun()
+{
+var p1=document.getElementById("p1");
+	var p2=document.getElementById("p2");
+	var p3=document.getElementById("p3");
+	var p4=document.getElementById("p4");
+	var p44=document.getElementById("p44");
+	var p6=document.getElementById("p6");
+var inm=document.getElementsByTagName('input');
+var t1=document.getElementById("t1").value;
+var t2=document.getElementById("t2").value;
+var t3=document.getElementById("t3").value;
+var t4=document.getElementById("t4").value;
+var t5=document.getElementById("t5").value;
+var t6=document.getElementById("t6").value;
+
+if((t1 !== "") && (t2 !== "") && (t3 !== "") && (t4 !== "") && (t5 !== "") && (t6 !== ""))
+{
+	return true;
+}
+else if((t1=="") ||(t2="")||(t3="")||(t4="")||(t5="")||(t6=""))
+{
+
+for(var k=0;k<6;k++)
+{
+if(inm[k].value=="")
+{
+fun2(inm[k].id);
+}
+}
+return false;
+}
+else if(t1 !== "")
+{
+	for(var k=0;k<6;k++)
+{
+if(inm[k].value=="")
+{
+fun2(inm[k].id);
+}
+}
+
+	return false;
+}
+}
+function fun2(str)
+{
+
+if(str=="t1")
+{
+p1.innerHTML="Enter your name";
+
+}
+if(str=="t2")
+{
+p2.innerHTML="Enter your address";
+
+}
+if(str=="t3")
+{
+
+p3.innerHTML="Enter a valid email";
+
+}
+if(str=="t4")
+{
+
+p4.innerHTML="Enter your mobile";
+
+}
+if(str=="t5")
+{
+
+p44.innerHTML="Enter your password";
+
+}
+if(str=="t6")
+{
+	
+p6.innerHTML="Re-enter password";
+
+}
+}
+</script>
+</head>
+<body bgcolor="#7df9ff	"><form method="post" action="#" onsubmit="return fun()">
+<table width="45%" cellpadding="10">
+	<tr>
+<th colspan="2"><h3>Student Registration Form</h3></th>
+</tr>
+<tr>
+<td>Name</td><td><input type="text" id="t1" size="40" >&nbsp;<font id="p1" style="color:red;"></font></td>
+</tr>
+<tr>
+<td>Personal Address</td><td><input type="text" id="t2" size="40" >&nbsp;<font id="p2" style="color:red;"></font></td>
+</tr>
+<tr>
+<td>EmailId</td><td><input type="email" id="t3" size="40" >&nbsp;<font id="p3" style="color:red;"></font></td>
+</tr>
+<tr>
+<td>MobileNo</td><td><input type="text" id="t4" size="40" >&nbsp;<font id="p4" style="color:red;"></font></td>
+</tr>
+<tr>
+<td>Password</td><td><input type="password" id="t5" size="40" >&nbsp;<font id="p44" style="color:red;"></font></td>
+</tr>
+<tr>
+<td>Confirm Password</td><td><input type="password" id="t6" size="40" >&nbsp;<font id="p6" style="color:red;"></font></td></tr><tr>
+<td></td><td><input type="submit" id="b1" value="Submit Form"></td>
+</tr>
+</table>
+<p id="p5"></p>
+</body></form>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+var val1=new Array(96,83,50);
+var val2=new Array(99,93,50);
+document.write("marks for : Arun is "+val1+"<br>total is "+(val1[0]+val1[1]+val1[2])+".");
+document.write("<br>marks for : Midhun is "+val2+"<br>total is "+(val2[0]+val2[1]+val2[2])+".");
+var tot1=val1[0]+val1[1]+val1[2],tot2=val2[0]+val2[1]+val2[2];
+var tot3=0,dif=0;
+if(tot1 > tot2)
+{
+	tot3=tot1;
+	dif=tot1-tot2;
+alert("Arjun has got "+dif+" marks more than Midhun");
+
+}
+else
+{
+	tot3=tot2;
+	dif=tot2-tot1;
+	alert("Midhun has got "+dif+" marks more than Arjun");
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

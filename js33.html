@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+function fun()
+{
+var f1=document.getElementById("f1");
+var x=document.getElementById("id1").checked;
+var y=document.getElementById("id2").checked;
+if((x==false) && (y==false))
+{
+	f1.innerHTML="Please choose your qualification";
+	return false;
+}
+else
+{
+	return true;
+}
+}
+</script>
+</head>
+<body bgcolor="#7df9ff"><form method="get" action="#" onsubmit="return fun()">
+<table width="23%" cellpadding="5">
+	<tr><th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check Box Validation</th></tr>
+	<tr><td>Qualification:</td><td><input type="checkbox" name="r1" id="id1">Graduate&nbsp;&nbsp;&nbsp;<input type="checkbox" name="r1" id="id2">PostGraduate</td></tr>
+	<tr><td></td><td><font id="f1" style="color:red;"></font></td></tr>
+	<tr><td></td><td><input type="submit"></td></tr>
+</table></form>
+</body>
+</html>

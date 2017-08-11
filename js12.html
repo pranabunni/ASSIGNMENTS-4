@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+var x1="apple";
+function func1()
+{
+	document.write("<p><h3>Global</h3></p><p>"+x1+" inside function</p>");
+}
+
+function func2()
+{
+	var x2="apple";
+	document.write("<br><p><h3>Local</h3></p><p>"+x2+" inside function</p>");
+}
+
+func1();
+document.write("<p>"+x1+" outside function</p>");
+func2();
+document.write("<p>"+x2+" outside function</p>");
+
+</script>
+</head>
+<body>
+</body>
+</html>

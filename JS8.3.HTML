@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+function fun()
+{
+	var s=document.getElementById("s1");
+	var opt=s.options[s.selectedIndex].value;
+	if(opt!="a")
+	{
+		alert("you selected a new option");
+	}
+}
+	</script>
+</head>
+<body>
+	<p>Select a new car from the list.</p>
+<select id="s1" onchange="fun()">
+<option value="a">Audi</option><option value="b">BMW</option><option value="be">Benz</option>
+</select>
+</body>
+</html>
